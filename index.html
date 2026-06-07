@@ -1,96 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Kore-G Music</title>
-  <style>
-    body {
-      background-color: #000033;
-      color: #19bd9c;
-      font-family: "Courier New", monospace;
-      margin: 0;
-      padding: 0;
-    }
-    a {
-      color: #FFFF00;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .product-title {
-      color: #00FF00;
-      font-size: 20px;
-    }
-    .price {
-      color: #FFCC00;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kore-G | Sample Packs</title>
+  <meta name="description" content="Psytrance & bass music sample packs by Kore-G. Used by Vini Vici, Reinier Zonneveld & Indira Paganotto.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Page wrapper -->
-<table width="900" align="center" border="1" cellpadding="10" cellspacing="0" bgcolor="#000000">
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">fKore-G</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="https://koregmusic.gumroad.com" target="_blank" rel="noopener">Shop</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- Header -->
-  <tr>
-    <td colspan="2" align="center" bgcolor="#111199">
-      <h1 style="color:#00FF00;">Dataflex</h1>
-      <marquee behavior="scroll" direction="left">Buy exclusive retro tech digital downloads & gear!</marquee>
-    </td>
-  </tr>
+<main>
 
-  <!-- Navigation bar -->
-  <tr>
-    <td colspan="2" align="center" bgcolor="#222266">
-      <a href="#">Home</a> |
-      <a href="#">Products</a> |
-      <a href="#">Support</a> |
-      <a href="#">Contact</a>
-    </td>
-  </tr>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Kore-<span>G</span></h1>
+      <p>Psytrance & bass music sample packs. Used by artists around the world.</p>
+      <a href="https://koregmusic.gumroad.com" class="btn btn-solid" target="_blank" rel="noopener">Browse All Packs</a>
+    </div>
+  </section>
 
-  <!-- Product listing -->
-  <tr>
-    <td colspan="2" valign="top">
+  <!-- Products -->
+  <section>
+    <div class="container">
+      <p class="section-label">Sample Packs</p>
+      <h2 class="section-title">Latest Releases</h2>
+      <div class="product-grid">
 
-      <h2 class="product-title">📀 Ultimate Windows 98 Theme Pack this is my life now</h2>
-      <p>Relive the golden days with sounds, cursors, wallpapers & startup screens. ZIP download (25MB).</p>
-      <p class="price">$4.99 AUD</p>
+        <a href="korjiliddicut./products/psydnb/" class="product-card">
+          <div class="product-card-img">
+            <img src="https://www.dropbox.com/scl/fi/ywxwg9unqllq4hvb04kzf/Kore-G-Psy-x-DnB-Smaller.png?rlkey=jqxohduc2g8in2vfl3qcm0mok&st=032oc01h&raw=1" alt="PSYDNB">
+            <div class="img-placeholder">[ PSYDNB artwork ]</div>
+          </div>
+          <div class="product-card-body">
+            <h3>PSYDNB</h3>
+            <p class="price">Buy on Gumroad →</p>
+            <span class="btn btn-ghost" style="font-size:0.75rem;padding:8px 16px;">View Pack</span>
+          </div>
+        </a>
 
-      <!-- PayPal Buy Now button -->
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <!-- Replace this with your real hosted_button_id from PayPal -->
-        <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
-        <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Buy Now with PayPal">
-        <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-      </form>
+        <a href="/products/electro-trance-vol-2/" class="product-card">
+          <div class="product-card-img">
+            <img src="https://www.dropbox.com/scl/fi/ls0geiva1yjgtw77ucagc/squareanimated.gif?rlkey=l8kjm4vs7e87lfs2qkqv4ydzg&st=obaylkzw&raw=1" alt="Electro Trance Vol 2">
+            <div class="img-placeholder">[ Electro Trance Vol 2 artwork ]</div>
+          </div>
+          <div class="product-card-body">
+            <h3>Electro Trance, Vol. 2</h3>
+            <p class="price">Buy on Gumroad →</p>
+            <span class="btn btn-ghost" style="font-size:0.75rem;padding:8px 16px;">View Pack</span>
+          </div>
+        </a>
 
-      <hr>
+        <a href="/products/electro-trance-vol-1/" class="product-card">
+          <div class="product-card-img">
+            <img src="https://www.dropbox.com/scl/fi/w3z09egksfd302szcep8b/Electro-Trance-Vol.-1.jpg?rlkey=pmtb92xxu5dul3fzkx0mfp945&st=krmh8ck1&raw=1" alt="Electro Trance Vol 1">
+            <div class="img-placeholder">[ Electro Trance Vol 1 artwork ]</div>
+          </div>
+          <div class="product-card-body">
+            <h3>Electro Trance, Vol. 1</h3>
+            <p class="price">Buy on Gumroad →</p>
+            <span class="btn btn-ghost" style="font-size:0.75rem;padding:8px 16px;">View Pack</span>
+          </div>
+        </a>
 
-      <h2 class="product-title">🧠 1337 Hacker Desktop Wallpaper Pack</h2>
-      <p>A collection of cyberpunk & matrix-inspired wallpapers in 1024x768 resolution.</p>
-      <p class="price">$2.00 AUD</p>
+        <a href="/products/separate-ways/" class="product-card">
+          <div class="product-card-img">
+            <!-- Replace with: <img src="/images/separate-ways.jpg" alt="Separate Ways"> -->
+            <div class="img-placeholder">[ Separate Ways artwork ]</div>
+          </div>
+          <div class="product-card-body">
+            <h3>Separate Ways, Sample Pack</h3>
+            <p class="price">Buy on Gumroad →</p>
+            <span class="btn btn-ghost" style="font-size:0.75rem;padding:8px 16px;">View Pack</span>
+          </div>
+        </a>
 
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="YOUR_OTHER_BUTTON_ID">
-        <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Buy Now with PayPal">
-        <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-      </form>
+      </div>
+    </div>
+  </section>
 
-    </td>
-  </tr>
+  <!-- About strip -->
+  <section>
+    <div class="container">
+      <div class="about-strip">
+        <!-- Replace with: <img src="/images/koreg-photo.jpg" alt="Kore-G"> -->
+        <img src="" alt="" style="background:#1c1c1c;border:1px solid #2a2a2a;">
+        <div class="about-text">
+          <p class="section-label">About</p>
+          <h2 class="section-title">Kore-G</h2>
+          <p>Kore-G is a psytrance &amp; bass music producer based in Australia. His sample packs have been used by artists around the world including Vini Vici, Reinier Zonneveld &amp; Indira Paganotto.</p>
+          <a href="/about/" class="btn">More Information</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <tr>
-    <td colspan="2" align="center" bgcolor="#111199">
-      <p style="font-size: 12px;">&copy; 2025 TechZone Shop. Powered by PayPal. Best viewed in Netscape 4.7.</p>
-    </td>
-  </tr>
+</main>
 
-</table>
+<footer>
+  <div class="footer-inner">
+    <ul class="footer-social">
+      <li><a href="https://www.instagram.com/koregmusic/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.youtube.com/@koregmusic" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@koregmusic" target="_blank" rel="noopener">TikTok</a></li>
+    </ul>
+    <p>&copy; 2026 Kore-G. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+</script>
 
 </body>
-</html> 
+</html>
