@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Kore-G</title>
+  <meta name="description" content="Kore-G is a psytrance & bass music producer and sample creator based in Melbourne, Australia.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="/">
+        <img src="https://github.com/korjiliddicut/koregmusic/blob/main/images/kore26.gif?raw=true" alt="Kore-G" style="height: 80px;width:auto;">
+      </a>
+      <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sample-packs/" rel="noopener">Sample Packs</a></li>
+        <li><a href="/about/" class="active">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<main>
+  <div class="about-page">
+    <p class="section-label">About</p>
+    <h1>Kore-G</h1>
+
+    <p>Kore-G is an electronic music producer based in Melbourne, Australia. Known for his innovative approach, he merges elements of psytrance with bass music, among other genres to create a unique & psychedelic sonic space. </p>
+    <p>Extending beyond music production, he is deeply involved in art & technology, from self-made 3D animations to the mixing and mastering of his tracks to creating entire sample packs on Splice. Over the years, Kore-G has played at Australian festivals such as Esoteric, Rabbits Eat Lettuce, and Aum Festival in New Zealand.</p>
+    <p>His sample packs have been supported by worldwide including Sara Landry, Vini Vici, Reinier Zonneveld & Indira Paganotto.</p>
+
+    <!-- Add more about text here -->
+
+    <div style="margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="https://www.instagram.com/koregmusic/" class="btn" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/@koregmusic" class="btn" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.tiktok.com/@koregmusic" class="btn" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <ul class="footer-social">
+      <li><a href="https://www.instagram.com/koregmusic/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.youtube.com/@koregmusic" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@koregmusic" target="_blank" rel="noopener">TikTok</a></li>
+    </ul>
+    <p>&copy; 2026 Kore-G. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/refund-policy/">Refund Policy</a></li>
+      <li><a href="/privacy-policy/">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>
