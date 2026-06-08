@@ -63,7 +63,7 @@ nav {
   font-weight: bold;
   color: var(--accent);
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .nav-links {
@@ -75,7 +75,7 @@ nav {
 .nav-links a {
   color: var(--muted);
   font-size: 0.85rem;
-  text-transform: capitalize;
+  text-transform: none;
   letter-spacing: 1px;
   transition: color 0.2s, text-decoration-color 0.2s;
   text-decoration: underline;
@@ -113,7 +113,7 @@ nav {
 .hero h1 {
   font-size: clamp(2rem, 6vw, 4rem);
   letter-spacing: 4px;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 16px;
 }
 
@@ -134,7 +134,7 @@ nav {
   color: var(--accent);
   font-family: inherit;
   font-size: 0.85rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 2px;
   border-radius: var(--radius);
   cursor: pointer;
@@ -160,7 +160,7 @@ section + section { border-top: 1px solid var(--border); }
 
 .section-label {
   font-size: 0.75rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 3px;
   color: var(--accent);
   margin-bottom: 12px;
@@ -168,7 +168,7 @@ section + section { border-top: 1px solid var(--border); }
 
 .section-title {
   font-size: clamp(1.4rem, 3vw, 2rem);
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 2px;
   margin-bottom: 8px;
 }
@@ -219,7 +219,7 @@ section + section { border-top: 1px solid var(--border); }
 
 .product-card-body h3 {
   font-size: 0.95rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
   margin-bottom: 6px;
 }
@@ -273,7 +273,7 @@ section + section { border-top: 1px solid var(--border); }
 
 .product-page-info h1 {
   font-size: clamp(1.4rem, 3vw, 2rem);
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 2px;
   margin-bottom: 8px;
 }
@@ -308,7 +308,7 @@ section + section { border-top: 1px solid var(--border); }
   color: var(--text);
   font-family: inherit;
   font-size: 0.85rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
   padding: 14px 16px;
   display: flex;
@@ -373,7 +373,7 @@ footer {
 .footer-social a {
   color: var(--muted);
   font-size: 0.8rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
   transition: color 0.2s;
 }
@@ -388,7 +388,7 @@ footer {
 .footer-links a {
   color: var(--muted);
   font-size: 0.75rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
   transition: color 0.2s;
 }
@@ -401,7 +401,7 @@ footer p { color: var(--muted); font-size: 0.75rem; }
 
 /* ── About page ── */
 .about-page { max-width: 700px; margin: 0 auto; padding: 64px 20px; }
-.about-page h1 { font-size: 2rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 32px; }
+.about-page h1 { font-size: 2rem; text-transform: capitalize; letter-spacing: 3px; margin-bottom: 32px; }
 .about-page p { color: var(--muted); line-height: 1.9; margin-bottom: 20px; }
 .about-page .highlight { color: var(--accent); }
 
