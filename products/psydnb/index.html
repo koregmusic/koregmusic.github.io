@@ -11,14 +11,16 @@
 
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="/">Kore-G</a>
+    <a class="nav-logo" href="/">
+      <img src="/images/kore26.gif" alt="Kore-G" style="height: 80px;width:auto;">
+    </a>
     <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="/">Home</a></li>
+      <li><a href="/sample-packs/" class="active" rel="noopener">Sample Packs</a></li>
       <li><a href="/about/">About</a></li>
-      <li><a href="https://koregmusic.gumroad.com" target="_blank" rel="noopener">Shop</a></li>
     </ul>
   </div>
 </nav>
@@ -37,12 +39,14 @@
       <div class="product-page-info">
         <p class="section-label">DnB &amp; Psytrance</p>
         <h1>PSYDNB</h1>
-        <p class="tagline">Your chance to piss off genre purists...</p>
-        <p class="tagline">Sample Pack dedicated to PsyTrance x Drum &amp; Bass Production</p>
+        <p class="price">$50 AUD</p>
+        <p class="description">
+          The first sample pack dedicated to the production of Psytrance x Drum &amp; Bass.<br>
+          Over 120+ samples including psytrance basses, drum shots, fills, breakbeats, psychedelic fx, bass shots, &amp; atmospheres.<br>
+          Applicable to a range of hi-bpm genres including hi-tech, darkpsy, hard techno, hardstyle, &amp; more.
+        </p>
 
-        <a href="https://koregmusic.gumroad.com/l/psydnb" class="btn btn-solid" target="_blank" rel="noopener" style="margin-bottom:32px;display:inline-block;">
-          Buy on Gumroad →
-        </a>
+        <a class="btn btn-solid gumroad-button" href="https://koregmusic.gumroad.com/l/psydnb" data-gumroad-overlay-checkout="true" style="margin-bottom:32px;">Buy Now</a>
 
         <!-- Accordion: Pack Contents -->
         <div class="accordion">
@@ -121,9 +125,15 @@
       <li><a href="https://www.tiktok.com/@koregmusic" target="_blank" rel="noopener">TikTok</a></li>
     </ul>
     <p>&copy; 2026 Kore-G. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/refund-policy/">Refund Policy</a></li>
+      <li><a href="/privacy-policy/">Privacy Policy</a></li>
+    </ul>
   </div>
 </footer>
 
+<script src="https://gumroad.com/js/gumroad.js"></script>
 <script>
   function toggleNav() {
     document.getElementById('nav-links').classList.toggle('open');
