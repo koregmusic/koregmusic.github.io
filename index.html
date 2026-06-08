@@ -10,24 +10,11 @@
 </head>
 <body>
 
-  <script>
-  const heroModel = document.getElementById('hero-model');
-  window.addEventListener('mousemove', (e) => {
-    // turn cursor position into a number from -1 to 1
-    const x = (e.clientX / window.innerWidth) * 2 - 1;
-    const y = (e.clientY / window.innerHeight) * 2 - 1;
-    // small angles = it only moves "slightly"
-    const theta = x * 15;        // left/right swing, ±15°
-    const phi = 80 + y * 8;      // up/down tilt
-    heroModel.cameraOrbit = `${theta}deg ${phi}deg 105%`;
-  });
-</script>
-
   
   <nav>
     <div class="nav-inner">
       <a class="nav-logo" href="/">
-        <img src="https://github.com/korjiliddicut/koregmusic/blob/main/images/kore26.gif?raw=true" alt="Kore-G" style="height: 80px;width:auto;">
+        <img src="/images/kore26.gif">
       </a>
       <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">
         <span></span><span></span><span></span>
@@ -68,6 +55,18 @@
   </div>
 </footer>
 
+    <script>
+  const heroModel = document.getElementById('hero-model');
+  window.addEventListener('mousemove', (e) => {
+    // turn cursor position into a number from -1 to 1
+    const x = (e.clientX / window.innerWidth) * 2 - 1;
+    const y = (e.clientY / window.innerHeight) * 2 - 1;
+    // small angles = it only moves "slightly"
+    const theta = x * 15;        // left/right swing, ±15°
+    const phi = 80 + y * 8;      // up/down tilt
+    heroModel.cameraOrbit = `${theta}deg ${phi}deg 105%`;
+  });
+</script>
 <script>
   function toggleNav() {
     document.getElementById('nav-links').classList.toggle('open');
