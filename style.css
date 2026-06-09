@@ -471,6 +471,19 @@ footer p { color: var(--muted); font-size: 0.75rem; }
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
 
+  .nav-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .nav-links {
     display: none;
     position: absolute;
