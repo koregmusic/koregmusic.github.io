@@ -36,7 +36,7 @@
   camera-controls
   auto-rotate
   interaction-prompt="none"
-  style="width: 100%; height: calc(100vh - 113px); background-color: #131313;">
+  style="width: 100%; height: 100vh; background-color: #131313;">
 </model-viewer>
   
 </main>
@@ -58,6 +58,16 @@
 </footer>
 
 <script>
+  function fitModel() {
+    const model = document.getElementById('hero-model');
+    if (!model) return;
+    const navH = document.querySelector('nav').offsetHeight;
+    const footerH = document.querySelector('footer').offsetHeight;
+    model.style.height = (window.innerHeight - navH - footerH) + 'px';
+  }
+  fitModel();
+  window.addEventListener('resize', fitModel);
+
   const heroModel = document.getElementById('hero-model');
   window.addEventListener('mousemove', (e) => {
     if (!heroModel) return;   // safety: do nothing if the model isn't on the page
