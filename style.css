@@ -476,7 +476,7 @@ footer p { color: var(--muted); font-size: 0.75rem; }
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 12px 16px;
+    padding: 28px 16px;
   }
 
   .nav-logo {
@@ -485,7 +485,7 @@ footer p { color: var(--muted); font-size: 0.75rem; }
     transform: translateX(-50%);
   }
 
-  .nav-logo img { height: 48px; }
+  .nav-logo img { height: 60px; }
 
   .nav-links {
     display: none;
